@@ -23,7 +23,7 @@ const pixabayOptions = new URLSearchParams({
 });
 
 const mainObject = {
-  httpRequest(ulr) {
+  httpsRequest(ulr) {
     this.removeChilds();
     loading.style.display = 'block';
     fetch(ulr)
@@ -107,5 +107,6 @@ searchForm.addEventListener('submit', event => {
   event.preventDefault();
   pixabayOptions.set('q', searchQuery.value.toString());
   let ulr = `https://pixabay.com/api?${pixabayOptions}`;
-  mainObject.httpRequest(ulr);
+  console.log(ulr);
+  mainObject.httpsRequest(ulr);
 });
