@@ -106,7 +106,7 @@ const mainObject = {
 searchForm.addEventListener('submit', event => {
   event.preventDefault();
   pixabayOptions.set('q', searchQuery.value.toString());
-  let ulr = `http://pixabay.com/api?${pixabayOptions}`;
+  let ulr = `https://pixabay.com/api?${pixabayOptions}`;
   console.log(ulr);
   mainObject.httpsRequest(ulr);
 });
