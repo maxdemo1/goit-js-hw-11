@@ -2,7 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 import iziToast from 'izitoast';
-import 'iziToast/dist/css/iziToast.min.css';
+import 'izitoast/dist/css/iziToast.min.css';
 
 const searchForm = document.querySelector('.search-form');
 const searchQuery = searchForm.querySelector('[name="search-query"]');
