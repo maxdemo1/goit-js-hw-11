@@ -24,5 +24,5 @@ import"https://cdn.jsdelivr.net/npm/izitoast@1.4.0/+esm";import{S as m,i as u}fr
         <p>${o.downloads}</p>
       </div>
     </div>
-  </li>`})})(),n.insertAdjacentHTML("afterbegin",e),p.refresh(),h.value=""},removeChilds(){n.querySelectorAll(".gallery-item").forEach(e=>{e.remove()})}};d.addEventListener("submit",s=>{s.preventDefault(),c.set("q",h.value.toString());let e=`https://pixabay.com/api?${c}`;console.log(e),g.httpsRequest(e)});
+  </li>`})})(),n.insertAdjacentHTML("afterbegin",e),p.refresh(),h.value=""},removeChilds(){n.querySelectorAll(".gallery-item").forEach(e=>{e.remove()})}};d.addEventListener("submit",s=>{s.preventDefault(),c.set("q",h.value.toString());let e=`https://pixabay.com/api/?${c}`;console.log(e),g.httpsRequest(e)});
 //# sourceMappingURL=commonHelpers.js.map
